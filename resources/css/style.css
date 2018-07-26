@@ -7,19 +7,32 @@ html {
   box-sizing: inherit;
 }
 
-/*Use Colorzilla to Identify colours and FontSquirrel to identify fonts*/
+/*Use Colorzilla to Identify colours*/
 
 /*Universal Formatting*/
 body {
   font-size: 16px;
-  line-height: 1.4;
+
   font-family: Helvetica;
   color: rgb(74, 74, 74);
 }
 
 .container {
   width: 100%;
-  padding: 2rem 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 /*Header- Logo*/
@@ -28,8 +41,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 header .logo {
@@ -46,6 +58,43 @@ header .logo span .lightgrey {
   color: rgb(155, 155, 155);
 }
 
+nav span {
+  font-weight: normal;
+}
+
 nav span:nth-child(n+2) {
   margin-left: 1rem;
+}
+
+/*First Section*/
+.grey.container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(216, 216, 216);
+  padding: 2rem 1.5rem;
+}
+
+.banner {
+  width: 60%;
+  margin-right: 1.5rem;
+}
+
+.strapline {
+  width: 30%;
+}
+
+.strapline h3 {
+  margin: 2rem 0;
+}
+
+.btn {
+  display: block;
+  color: white;
+  background-color: rgb(74, 74, 74);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.btn:hover {
+  background-color: rgb(255, 25, 25);
 }
