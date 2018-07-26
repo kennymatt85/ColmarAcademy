@@ -1,0 +1,51 @@
+/* "Tamming" Box Model With Reset */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Use Colorzilla to Identify colours and FontSquirrel to identify fonts*/
+
+/*Universal Formatting*/
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: Helvetica;
+  color: rgb(74, 74, 74);
+}
+
+.container {
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+/*Header- Logo*/
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+header .logo span {
+  font-weight: bold;
+}
+
+header .logo span .lightgrey {
+  color: rgb(155, 155, 155);
+}
+
+nav span:nth-child(n+2) {
+  margin-left: 1rem;
+}
