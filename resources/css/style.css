@@ -47,6 +47,11 @@ p {
   line-height: 1.2;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+
 /*Header- Logo*/
 
 header .container {
@@ -73,11 +78,8 @@ header .logo span .lightgrey {
   color: rgb(155, 155, 155);
 }
 
-nav span {
-  font-weight: normal;
-}
 
-nav span:nth-child(n+2) {
+nav a:nth-child(n+2) {
   margin-left: 1rem;
 }
 
@@ -270,4 +272,19 @@ section .container {
 
 .fourth .campus {
   justify-content: flex-start;
+}
+
+/*Footer*/
+
+footer {
+  position: relative;
+  top: 4rem;
+  height: 6rem;
+  padding: 1rem 1.5rem 0;
+}
+
+footer a {
+  display: inline-block;
+  float: right;
+  margin-left: 1.5rem;
 }
