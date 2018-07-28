@@ -10,8 +10,11 @@ html {
 /*Use Colorzilla to Identify colours*/
 
 /*Universal Formatting*/
-body {
+html {
   font-size: 16px;
+}
+
+body {
   font-family: Helvetica;
   color: rgb(74, 74, 74);
 }
@@ -50,6 +53,10 @@ p {
 a {
   text-decoration: none;
   color: rgb(74, 74, 74);
+}
+
+.mobile {
+  display: none;
 }
 
 /*Header- Logo*/
@@ -119,36 +126,6 @@ section .container {
 .strapline h4 {
   margin: 2rem 0;
 }
-
-/*Fix For Strapline Screens less than 960px*/
-@media only screen and (max-width: 1024px) {
-  .first .container {
-    display: block;
-  }
-  .first .banner {
-    width: 100%;
-    margin: 0;
-  }
-  .first img {
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
-    height: 20rem;
-  }
-  .strapline {
-    text-align: center;
-    width: 100%;
-  }
-  .strapline h2 {
-    line-height: 1;
-    margin-top: 1.5rem;
-  }
-  .strapline h4 {
-    margin: 1rem 0;
-  }
-
-}
-
 
 
 .btn {
@@ -318,4 +295,77 @@ footer a {
   display: inline-block;
   float: right;
   margin-left: 1.5rem;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 640px) {
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.45rem;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .first .container {
+    padding: 0;
+  }
+  .strapline {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /*Fix For Banner Image Tablets*/
+  .first img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 20rem;
+  }
+  .strapline {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .first .container {
+    display: block;
+  }
+  .first .banner {
+    width: 100%;
+    margin: 0;
+  }
+  .strapline {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .strapline h2 {
+    margin: 0 0 2rem;
+    line-height: 1;
+  }
+  .strapline h4 {
+    margin: 0 0 2rem;
+  }
 }
