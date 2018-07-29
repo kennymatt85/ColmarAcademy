@@ -69,7 +69,7 @@ span {
   display: none;
 }
 
-@media only screen and (max-width: 640px), (device-max-width: 640px) {
+@media only screen and (max-width: 640px) {
   /*Remove Desktop Items*/
   .desktop {
     display: none;
@@ -169,7 +169,7 @@ section .container {
   color: rgb(74, 74, 74);
 }
 
-@media only screen and (max-width: 640px), (device-max-width: 640px) {
+@media only screen and (max-width: 640px) {
   /*Change Containers*/
   .first .container {
     padding: 0;
@@ -280,7 +280,7 @@ section .container {
 }
 
 
-@media only screen and (max-width: 640px), (device-max-width: 640px) {
+@media only screen and (max-width: 640px) {
   /*Change Containers*/
   .second .container {
     padding: 1rem;
@@ -465,7 +465,7 @@ section .container {
   color: white;
 }
 
-@media only screen and (max-width: 640px), (device-max-width: 640px) {
+@media only screen and (max-width: 640px) {
   /*Change Containers*/
   .fourth .container {
     display: block;
@@ -511,7 +511,7 @@ footer a {
   margin-left: 1.5rem;
 }
 
-@media only screen and (max-width: 640px), (device-max-width: 640px) {
+@media only screen and (max-width: 640px) {
   /*Resize Footer*/
   footer {
     background-color: white;
