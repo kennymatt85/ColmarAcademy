@@ -28,6 +28,7 @@ img {
 
 h2 {
   font-family: 'Lato', sans-serif;
+  color: white;
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 900;
@@ -131,8 +132,8 @@ section .container {
   align-items: center;
 }
 
-.grey {
-  background-color: rgb(216, 216, 216);
+.blue {
+  background: linear-gradient(rgb(0, 123, 205), rgb(95, 211, 252));
 }
 
 .banner {
@@ -145,6 +146,7 @@ section .container {
 }
 
 .strapline h4 {
+  color: white;
   margin: 2rem 0;
 }
 
@@ -163,7 +165,8 @@ section .container {
 }
 
 .btn:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(74, 74, 74);
 }
 
 @media only screen and (max-width: 640px) {
@@ -211,8 +214,10 @@ section .container {
 /*Section 2 */
 
 .offwhite {
-  background-color: rgb(243, 245, 245);
+  background: linear-gradient(rgb(155, 155, 155), rgb(243, 245, 245));
 }
+
+
 
 .second .container {
   padding-right: 0;
@@ -238,6 +243,10 @@ section .container {
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
+}
+
+.second .events.blue {
+  color: white;
 }
 
 .events {
@@ -267,7 +276,7 @@ section .container {
 
 .events .text a {
   text-decoration: none;
-  color: rgb(69, 179, 231);
+  color: rgb(9, 113, 178);
 }
 
 
@@ -288,16 +297,18 @@ section .container {
   }
   .events .text {
     margin: 2rem 1rem;
+    color: rgb(74, 74, 74);
   }
 
   .events .text p {
     margin: 1rem 0;
   }
 
-  /*Remove Grey Background*/
-  .events.grey {
-    background-color: unset;
+  /*Remove Blue Background*/
+  .events.blue {
+    background: unset;
   }
+
 }
 
 @media only screen and (min-width: 641px) and (max-width: 850px) {
@@ -315,6 +326,10 @@ section .container {
 .third .container {
   display: block;
   padding: 2rem 5rem;
+}
+
+.third h3 {
+  color: white;
 }
 
 .third h3, .fourth h3 {
@@ -429,6 +444,9 @@ section .container {
   padding: 2rem 0 2rem 1.5rem;
 }
 
+.fourth h3 {
+  color: white;
+}
 .video.container {
   display: flex;
   padding: 0;
@@ -441,6 +459,10 @@ section .container {
 
 .fourth .campus {
   justify-content: flex-start;
+}
+
+.fourth .events.blue {
+  color: white;
 }
 
 @media only screen and (max-width: 640px) {
@@ -461,6 +483,7 @@ section .container {
     width: 100%;
     margin: 0;
   }
+
 }
 
 @media only screen and (min-width: 641px) and (max-width: 850px) {
@@ -491,6 +514,7 @@ footer a {
 @media only screen and (max-width: 640px) {
   /*Resize Footer*/
   footer {
+    background-color: white;
     height: auto;
     padding: 0;
   }
