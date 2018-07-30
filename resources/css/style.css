@@ -276,8 +276,11 @@ section .container {
 }
 
 .events .text a {
-  text-decoration: none;
   color: rgb(9, 113, 178);
+}
+
+.events .text a:hover {
+  text-decoration: underline;
 }
 
 
