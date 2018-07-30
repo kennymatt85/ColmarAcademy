@@ -239,7 +239,7 @@ section .container {
   font-weight: 600;
 }
 
-.campus {
+.sidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -287,11 +287,11 @@ section .container {
     padding: 1rem;
   }
   /*Remove Flex from Section 2*/
-  .campus, .events {
+  .sidebar, .events {
     display: block;
   }
   /*Change Image and Text Width*/
-  .campus, .events, .events .image {
+  .sidebar, .events, .events .image {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -417,7 +417,7 @@ section .container {
   .third .text {
     height: 4.25rem;
     cursor: pointer;
-    transition: height 0.5s ease-out 1s;
+    transition: height 0.25s ease-out 0.5s;
   }
 
   .third .courses .text span {
@@ -427,7 +427,7 @@ section .container {
   .dropdown {
     position: relative;
     z-index: -1;
-    transition: z-index 0s linear 1.2s;
+    transition: z-index 0s linear 0.6s;
   }
 
   .third .text:hover {
@@ -458,7 +458,7 @@ section .container {
   margin-bottom: 0.5rem;
 }
 
-.fourth .campus {
+.fourth .sidebar {
   justify-content: flex-start;
 }
 
